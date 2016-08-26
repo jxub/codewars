@@ -8,3 +8,6 @@ def double_char(s):
     
     doubled = ''.join(ll)
     return doubled
+
+def faster_double_char(s):
+    return ''.join(list([x for pair in zip(list(s), list(s)) for x in pair]))
